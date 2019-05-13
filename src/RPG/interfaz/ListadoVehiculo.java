@@ -210,13 +210,13 @@ public class ListadoVehiculo extends javax.swing.JFrame {
 
         salir.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 16)); // NOI18N
         salir.setForeground(new java.awt.Color(0, 0, 0));
-        salir.setText("SALIR");
+        salir.setText("ATRÁS");
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salirActionPerformed(evt);
             }
         });
-        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 510, 170, 40));
+        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 530, 170, 40));
 
         tablaSeleccionados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
