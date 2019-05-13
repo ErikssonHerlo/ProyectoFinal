@@ -91,7 +91,7 @@ public class ListadoJugador extends javax.swing.JFrame {
 
         salir.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
         salir.setForeground(new java.awt.Color(0, 0, 0));
-        salir.setText("SALIR");
+        salir.setText("ATRÁS");
         salir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 salirActionPerformed(evt);

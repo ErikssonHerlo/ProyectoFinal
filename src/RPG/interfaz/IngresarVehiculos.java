@@ -160,7 +160,7 @@ public class IngresarVehiculos extends javax.swing.JFrame {
         getContentPane().add(infoNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 380, 250, 40));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 610, 80, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 610, 80, 30));
 
         nombreVehiculo.setBackground(new java.awt.Color(255, 255, 255));
         nombreVehiculo.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 16)); // NOI18N
@@ -316,8 +316,8 @@ public class IngresarVehiculos extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(254, 254, 254));
-        jLabel4.setText("ARMAS CREADAS");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 620, -1, -1));
+        jLabel4.setText("VEHICULOS CREADOS");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 620, -1, -1));
 
         ArmasCreadas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenesFondo/verde.jpg"))); // NOI18N
         getContentPane().add(ArmasCreadas, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -10, 720, 740));

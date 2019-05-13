@@ -305,6 +305,8 @@ public class Escenario extends javax.swing.JFrame {
         panelInfo.setBackground(new java.awt.Color(0, 0, 0));
         panelInfo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        rendirse.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        rendirse.setForeground(new java.awt.Color(1, 1, 1));
         rendirse.setText("RENDIRSE");
         rendirse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -327,6 +329,8 @@ public class Escenario extends javax.swing.JFrame {
         });
         panelInfo.add(dadoCienCaras, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 150, 80));
 
+        guardar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        guardar.setForeground(new java.awt.Color(1, 1, 1));
         guardar.setText("GUARDAR");
         guardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -335,8 +339,16 @@ public class Escenario extends javax.swing.JFrame {
         });
         panelInfo.add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 60, 110, 30));
 
+        cargar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        cargar.setForeground(new java.awt.Color(1, 1, 1));
         cargar.setText("CARGAR");
         panelInfo.add(cargar, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 100, 110, 30));
+
+        comodin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comodinActionPerformed(evt);
+            }
+        });
         panelInfo.add(comodin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 0, 150, 80));
 
         flechaComodin.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 13)); // NOI18N
@@ -537,29 +549,35 @@ public class Escenario extends javax.swing.JFrame {
         panelJugabilidad.setForeground(new java.awt.Color(0, 0, 0));
         panelJugabilidad.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        seleccVehiculo.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        seleccVehiculo.setForeground(new java.awt.Color(1, 1, 1));
         seleccVehiculo.setText("CAMBIAR ");
         seleccVehiculo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seleccVehiculoActionPerformed(evt);
             }
         });
-        panelJugabilidad.add(seleccVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 110, 40));
+        panelJugabilidad.add(seleccVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 110, 40));
 
+        seleccMovimiento.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        seleccMovimiento.setForeground(new java.awt.Color(1, 1, 1));
         seleccMovimiento.setText("MOVERSE");
         seleccMovimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seleccMovimientoActionPerformed(evt);
             }
         });
-        panelJugabilidad.add(seleccMovimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 110, 40));
+        panelJugabilidad.add(seleccMovimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 440, 110, 40));
 
+        seleccAtacar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        seleccAtacar.setForeground(new java.awt.Color(1, 1, 1));
         seleccAtacar.setText("ATACAR");
         seleccAtacar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 seleccAtacarActionPerformed(evt);
             }
         });
-        panelJugabilidad.add(seleccAtacar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 110, 40));
+        panelJugabilidad.add(seleccAtacar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 440, 110, 40));
 
         tablaAtaqueDefensa = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
@@ -600,16 +618,16 @@ public class Escenario extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
+                .addContainerGap(44, Short.MAX_VALUE)
                 .addComponent(verSeleccVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(verSeleccVehiculo, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(verSeleccVehiculo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        panelJugabilidad.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 370, 420, 30));
+        panelJugabilidad.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 410, 30));
 
         tablaDefensa = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
@@ -626,7 +644,7 @@ public class Escenario extends javax.swing.JFrame {
         ));
         panelDefensa.setViewportView(tablaDefensa);
 
-        panelJugabilidad.add(panelDefensa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 590, 410, 80));
+        panelJugabilidad.add(panelDefensa, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 410, 80));
 
         tablaEnemigo = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
@@ -645,14 +663,14 @@ public class Escenario extends javax.swing.JFrame {
         ));
         panelEnemigo.setViewportView(tablaEnemigo);
 
-        panelJugabilidad.add(panelEnemigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 410, 80));
+        panelJugabilidad.add(panelEnemigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 530, 410, 80));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
+                .addContainerGap(44, Short.MAX_VALUE)
                 .addComponent(verSeleccOpcion, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -661,7 +679,7 @@ public class Escenario extends javax.swing.JFrame {
             .addComponent(verSeleccOpcion, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        panelJugabilidad.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 420, -1));
+        panelJugabilidad.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 410, -1));
 
         panelJugador.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -712,13 +730,15 @@ public class Escenario extends javax.swing.JFrame {
 
         panelJugabilidad.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 420, 90));
 
+        verPos.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 15)); // NOI18N
+        verPos.setForeground(new java.awt.Color(1, 1, 1));
         verPos.setText("POSICIONES");
         verPos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 verPosActionPerformed(evt);
             }
         });
-        panelJugabilidad.add(verPos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 670, 140, 40));
+        panelJugabilidad.add(verPos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 140, 30));
 
         getContentPane().add(panelJugabilidad, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 0, 450, 720));
 
@@ -838,6 +858,10 @@ public class Escenario extends javax.swing.JFrame {
     private void verPosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_verPosActionPerformed
         mostrarPosiciones();
     }//GEN-LAST:event_verPosActionPerformed
+
+    private void comodinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comodinActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comodinActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

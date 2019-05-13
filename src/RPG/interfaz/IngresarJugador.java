@@ -58,7 +58,7 @@ public class IngresarJugador extends javax.swing.JFrame {
 
         cancelar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
         cancelar.setForeground(new java.awt.Color(0, 0, 0));
-        cancelar.setText("REGRESAR");
+        cancelar.setText("ATRÁS");
         cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelarActionPerformed(evt);

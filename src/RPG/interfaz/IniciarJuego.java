@@ -38,6 +38,7 @@ public class IniciarJuego extends javax.swing.JFrame {
         titulo = new javax.swing.JLabel();
         ingresarDimensiones = new javax.swing.JComboBox<>();
         empezar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -57,6 +58,8 @@ public class IniciarJuego extends javax.swing.JFrame {
         });
         getContentPane().add(ingresarDimensiones, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 150, -1));
 
+        empezar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
+        empezar.setForeground(new java.awt.Color(1, 1, 1));
         empezar.setText("EMPEZAR");
         empezar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,6 +67,9 @@ public class IniciarJuego extends javax.swing.JFrame {
             }
         });
         getContentPane().add(empezar, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 150, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenesFondo/AviondeFondo4.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 240, 160));
 
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenesFondo/verde.jpg"))); // NOI18N
         getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 190));
@@ -120,6 +126,7 @@ public class IniciarJuego extends javax.swing.JFrame {
     private javax.swing.JButton empezar;
     private javax.swing.JLabel fondo;
     private javax.swing.JComboBox<String> ingresarDimensiones;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel titulo;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,0 +1,1096 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyectoFInalEriksson">
+  <ClassDiagramComponents>
+    <Class name="Enteros" package="RPG.excepciones" visibility="public" xPosition="5264.0" yPosition="3811.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="isNumeric" returnType="boolean" visibility="public" isStatic="true">
+          <Argument type="String" name="cadena"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Tienda" package="RPG.interfaz" visibility="public" xPosition="84.0" yPosition="2375.0">
+      <Fields>
+        <Field name="listadoObjetos" type="ArrayList&lt;Objeto&gt;" visibility="public" isStatic="true"/>
+        <Field name="puntos" type="String" visibility="private"/>
+        <Field name="comprar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="costoObjeto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="elegirKit" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoArmas" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoCosto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoKit1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoObjeto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="objetoSeleccionado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ptsKit" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="q" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="siNo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="subtitulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verArmas" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="elegirKit" returnType="void" visibility="public"/>
+        <Method name="puntosVida" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="verArmasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="elegirKitItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="comprarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListadoJugador" package="RPG.interfaz" visibility="public" xPosition="2234.0" yPosition="1198.0">
+      <Fields>
+        <Field name="listaJugador" type="ArrayList&lt;Jugador&gt;" visibility="public" isStatic="true"/>
+        <Field name="nombre" type="String" visibility="public" isStatic="true"/>
+        <Field name="IrACrearJugador" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="public"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tablaJugador" type="javax.swing.JTable" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verDato" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarTabla" returnType="void" visibility="public"/>
+        <Method name="obtenerJugador" returnType="String" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tablaJugadorMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="IrACrearJugadorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IniciarJuego" package="RPG.interfaz" visibility="public" xPosition="2234.0" yPosition="477.0">
+      <Fields>
+        <Field name="fila" type="int" visibility="public" isStatic="true"/>
+        <Field name="empezar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ingresarDimensiones" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="definirDimension" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="ingresarDimensionesItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="empezarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SeleccionListado" package="RPG.interfaz" visibility="public" xPosition="2234.0" yPosition="861.0">
+      <Fields>
+        <Field name="dibujo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verJugadores" type="javax.swing.JButton" visibility="private"/>
+        <Field name="verVehiculos" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="verVehiculosActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="verJugadoresActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IngresarVehiculos" package="RPG.interfaz" visibility="public" xPosition="3247.0" yPosition="2246.0">
+      <Fields>
+        <Field name="listaVehiculo" type="ArrayList&lt;Vehiculo&gt;" visibility="public" isStatic="true"/>
+        <Field name="listadoJugador" type="ArrayList&lt;Jugador&gt;" visibility="public" isStatic="true"/>
+        <Field name="seleccionAvion" type="String" visibility="private" isFinal="true"/>
+        <Field name="seleccionTanque" type="String" visibility="private" isFinal="true"/>
+        <Field name="indice" type="int" visibility="private"/>
+        <Field name="jugadorSeleccionado" type="String[][]" visibility="private"/>
+        <Field name="verJugador" type="String" visibility="private"/>
+        <Field name="arma" type="String" visibility="private"/>
+        <Field name="vidaInicial" type="String" visibility="private" isFinal="true"/>
+        <Field name="ataqueInicial" type="String" visibility="private" isFinal="true"/>
+        <Field name="defensaInicial" type="String" visibility="private" isFinal="true"/>
+        <Field name="ArmasCreadas" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="arma2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="armaNueva" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="avion" type="javax.swing.JButton" visibility="public"/>
+        <Field name="cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="infoArma" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoJ" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoJugadr" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoTipo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable2" type="javax.swing.JTable" visibility="private"/>
+        <Field name="nombreVehiculo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="numeroJugador" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="panelTipo" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelVerPlayer" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="seleccionar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tanque" type="javax.swing.JButton" visibility="public"/>
+        <Field name="tipoVehiculo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verJugadores" type="javax.swing.JTable" visibility="private"/>
+        <Field name="verPlayer" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarTabla" returnType="String[][]" visibility="public"/>
+        <Method name="busquedaJugador" returnType="void" visibility="public"/>
+        <Method name="mostrarBusqueda" returnType="void" visibility="public">
+          <Argument type="int" name="indice"/>
+        </Method>
+        <Method name="errorVacio" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="avionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tanqueActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="guardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="seleccionarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inicio" package="RPG.interfaz" visibility="public" xPosition="2234.0" yPosition="91.0">
+      <Fields>
+        <Field name="crear" type="javax.swing.JButton" visibility="private"/>
+        <Field name="estadisticas" type="javax.swing.JButton" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="iniciarJuego" type="javax.swing.JButton" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tienda" type="javax.swing.JButton" visibility="private"/>
+        <Field name="titulo2" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="crearActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tiendaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="iniciarJuegoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IngresarJugador" package="RPG.interfaz" visibility="public" xPosition="2130.0" yPosition="2283.0">
+      <Fields>
+        <Field name="listaJugador" type="ArrayList&lt;Jugador&gt;" visibility="public" isStatic="true"/>
+        <Field name="nivel" type="String" visibility="private" isFinal="true"/>
+        <Field name="experiencia" type="String" visibility="private" isFinal="true"/>
+        <Field name="identificador" type="String" visibility="private"/>
+        <Field name="cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="dibujo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="infoJugador" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="nombreJugador" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="guardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArmasTienda" package="RPG.interfaz" visibility="public" xPosition="1246.0" yPosition="4021.0">
+      <Fields>
+        <Field name="listadoArmas" type="ArrayList&lt;Arma&gt;" visibility="public" isStatic="true"/>
+        <Field name="numeroArma" type="int" visibility="private"/>
+        <Field name="listadoBusqueda" type="String[][]" visibility="package"/>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="armaSelec" type="javax.swing.JTable" visibility="private"/>
+        <Field name="comprar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="dibujo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="dineroJugador" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoMoney" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoNo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ingresarNumero" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="seleccionar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tablaArmas" type="javax.swing.JTable" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarTabla" returnType="String[][]" visibility="public"/>
+        <Method name="errorCompra" returnType="void" visibility="public"/>
+        <Method name="mostrarArma" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="seleccionarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListadoVehiculo" package="RPG.interfaz" visibility="public" xPosition="3634.0" yPosition="4963.0">
+      <Fields>
+        <Field name="listadoVehiculos" type="ArrayList&lt;Vehiculo&gt;" visibility="public" isStatic="true"/>
+        <Field name="vehiculosJuego" type="ArrayList&lt;Vehiculo&gt;" visibility="public" isStatic="true"/>
+        <Field name="dato" type="String" visibility="private"/>
+        <Field name="contadorVehiculo" type="int" visibility="private"/>
+        <Field name="arregloTemporal" type="String[]" visibility="package"/>
+        <Field name="vehiculoUno" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="vehiculoDos" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="vehiculoTres" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="contadorVer" type="int" visibility="package"/>
+        <Field name="dibujo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoContador1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoContador2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="iniciarPartida" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panelContador" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelVehiculo" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="reelegir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tablaSeleccionados" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tablaVehiculo" type="javax.swing.JTable" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verContador" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verSeleccionados" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="listadoNulo" returnType="void" visibility="public"/>
+        <Method name="mostrarListado" returnType="void" visibility="public"/>
+        <Method name="mostrarVehiculos" returnType="void" visibility="public"/>
+        <Method name="obtenerVehiculo" returnType="void" visibility="public">
+          <Argument type="int" name="contador"/>
+        </Method>
+        <Method name="seleccionVehiculos" returnType="void" visibility="public"/>
+        <Method name="cupoLleno" returnType="void" visibility="public">
+          <Argument type="int" name="noContador"/>
+        </Method>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="tablaVehiculoMouseClicked" returnType="void" visibility="private">
+          <Argument type="java.awt.event.MouseEvent" name="evt"/>
+        </Method>
+        <Method name="verSeleccionadosActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="iniciarPartidaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="reelegirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Escenario" package="RPG.interfaz" visibility="public" xPosition="8261.0" yPosition="1578.0">
+      <Fields>
+        <Field name="recibirFila" type="int" visibility="public" isStatic="true"/>
+        <Field name="posiciones" type="int[][]" visibility="public" isStatic="true"/>
+        <Field name="codigoTerreno" type="String[][]" visibility="public" isStatic="true"/>
+        <Field name="iconoEnemigo" type="IconoEnemigo" visibility="package"/>
+        <Field name="iconoEnemigoDos" type="IconoEnemigo" visibility="package"/>
+        <Field name="iconoEnemigoTres" type="IconoEnemigo" visibility="package"/>
+        <Field name="escenario" type="JButton[][]" visibility="package"/>
+        <Field name="matriz" type="JLabel[][]" visibility="package"/>
+        <Field name="borde" type="Border" visibility="package"/>
+        <Field name="terrenos" type="Terreno" visibility="package"/>
+        <Field name="tipoVehiculos" type="String[][]" visibility="package"/>
+        <Field name="recibirTipo" type="String" visibility="package"/>
+        <Field name="codigoUno" type="int" visibility="package"/>
+        <Field name="iconoVehiculo" type="Icon" visibility="package"/>
+        <Field name="iconoAvion" type="IconoAvion" visibility="package"/>
+        <Field name="iconoTanque" type="IconoTanque" visibility="package"/>
+        <Field name="movimientos" type="int[][]" visibility="package"/>
+        <Field name="filas" type="int" visibility="package"/>
+        <Field name="tipo" type="String" visibility="package"/>
+        <Field name="trueFalse" type="String" visibility="package"/>
+        <Field name="criterioImagenAtaque" type="Boolean" visibility="package"/>
+        <Field name="criterioImagenMovimiento" type="Boolean" visibility="package"/>
+        <Field name="criterioImagenComodin" type="Boolean" visibility="package"/>
+        <Field name="mostrarDado" type="DadoPartida" visibility="package"/>
+        <Field name="jugabilidad" type="Jugabilidad" visibility="package"/>
+        <Field name="contadorVehiculo" type="int" visibility="package"/>
+        <Field name="duplicado" type="Boolean" visibility="package"/>
+        <Field name="addVehiculo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="cargar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="comodin" type="javax.swing.JButton" visibility="private"/>
+        <Field name="dadoCienCaras" type="javax.swing.JButton" visibility="private"/>
+        <Field name="dadoSeisCaras" type="javax.swing.JButton" visibility="private"/>
+        <Field name="flechaAtaque" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="flechaComodin" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="flechaMov" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="infoComodin" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoJugador" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoLevel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoMov" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoMov2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoPos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoTipo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="mostrarNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mostrarTipo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="numeroCasillas" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="panelAtaque" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panelDefensa" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panelEnemigo" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="panelEscenario" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelInfo" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelJugabilidad" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelJugador" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelNoMov" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelPosicionar" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelPtsAtaque" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelPtsAtaque1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="panelVida" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="porcentajeAtaque" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="prueba" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rendirse" type="javax.swing.JButton" visibility="private"/>
+        <Field name="resultadoComodin" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="seleccAtacar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="seleccMovimiento" type="javax.swing.JButton" visibility="private"/>
+        <Field name="seleccVehiculo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="tablaAtaqueDefensa" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tablaDefensa" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tablaEnemigo" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tablaPos" type="javax.swing.JTable" visibility="private"/>
+        <Field name="tablaVida" type="javax.swing.JTable" visibility="private"/>
+        <Field name="verJugador" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verNivel" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verPos" type="javax.swing.JButton" visibility="private"/>
+        <Field name="verSeleccOpcion" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verSeleccVehiculo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="valoresIniciales" returnType="void" visibility="public"/>
+        <Method name="enemigoUno" returnType="void" visibility="public"/>
+        <Method name="enemigoDos" returnType="void" visibility="public"/>
+        <Method name="enemigoTres" returnType="void" visibility="public"/>
+        <Method name="mostrarVida" returnType="void" visibility="public"/>
+        <Method name="mostrarAtaque" returnType="void" visibility="public"/>
+        <Method name="mostrarDefensa" returnType="void" visibility="public"/>
+        <Method name="mostrarEnemigos" returnType="void" visibility="public"/>
+        <Method name="mostrarPosiciones" returnType="void" visibility="public"/>
+        <Method name="generarEscenario" returnType="void" visibility="public">
+          <Argument type="int" name="entradaFila"/>
+          <Argument type="int" name="entradaColumna"/>
+        </Method>
+        <Method name="guardarCoordenadas" returnType="void" visibility="public"/>
+        <Method name="pruebaUno" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="definirVehiculo" returnType="Icon" visibility="public">
+          <Argument type="String" name="tipo"/>
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="inicioDados" returnType="void" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="rendirseActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="addVehiculoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="seleccMovimientoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="seleccAtacarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="seleccVehiculoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dadoSeisCarasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="dadoCienCarasActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="guardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="verPosActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="comodinActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OpcionesCrear" package="RPG.interfaz" visibility="public" xPosition="2104.0" yPosition="3192.0">
+      <Fields>
+        <Field name="casco" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="crearArma" type="javax.swing.JButton" visibility="private"/>
+        <Field name="crearJugador" type="javax.swing.JButton" visibility="private"/>
+        <Field name="crearVehiculo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="listados" type="javax.swing.JButton" visibility="private"/>
+        <Field name="salir" type="javax.swing.JButton" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="salirActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="crearJugadorActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="crearVehiculoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="crearArmaActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="listadosActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ArmasAdquiridas" package="RPG.interfaz" visibility="public" xPosition="436.0" yPosition="3229.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IngresarArma" package="RPG.interfaz" visibility="public" xPosition="1236.0" yPosition="2273.0">
+      <Fields>
+        <Field name="listaArma" type="ArrayList&lt;Arma&gt;" visibility="public" isStatic="true"/>
+        <Field name="precioAtaque" type="int" visibility="private"/>
+        <Field name="precioArma" type="int" visibility="private" isFinal="true"/>
+        <Field name="mostrarPrecio" type="String" visibility="private"/>
+        <Field name="valorAtaque" type="String" visibility="private"/>
+        <Field name="cancelar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="costoAtaque" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="costoPunteria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="dibujo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="fondo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="guardar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="infoAtaque2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoCC" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoComplementos" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoCosto" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoCosto2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoCostoTotal" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoNombre" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoPunteria" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoPunteria2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="infoTipo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="ingresarAtaque" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ingresarNombre" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="ingresarPunteria" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="ingresarTipo" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="mostrarTotal" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="otroExtra" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="panelTotal" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="q1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="q2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="titulo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="verTotal" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="mostrarCostoAtaque" returnType="void" visibility="public"/>
+        <Method name="mostrarCostoPunteria" returnType="void" visibility="public"/>
+        <Method name="obtenerCosto" returnType="int" visibility="public"/>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="ingresarAtaqueItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="ingresarPunteriaItemStateChanged" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ItemEvent" name="evt"/>
+        </Method>
+        <Method name="guardarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="verTotalActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="cancelarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Jugador" package="RPG.jugador" visibility="public" xPosition="2364.0" yPosition="1716.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="nivel" type="String" visibility="private"/>
+        <Field name="experiencia" type="String" visibility="private"/>
+        <Field name="identificador" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="nivel"/>
+          <Argument type="String" name="experiencia"/>
+          <Argument type="String" name="identificador"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getNivel" returnType="String" visibility="public"/>
+        <Method name="setNivel" returnType="void" visibility="public">
+          <Argument type="String" name="nivel"/>
+        </Method>
+        <Method name="getExperiencia" returnType="String" visibility="public"/>
+        <Method name="setExperiencia" returnType="void" visibility="public">
+          <Argument type="String" name="experiencia"/>
+        </Method>
+        <Method name="getIdentificador" returnType="String" visibility="public"/>
+        <Method name="setIdentificador" returnType="void" visibility="public">
+          <Argument type="String" name="identificador"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Jugabilidad" package="RPG.jugabilidad" visibility="public" xPosition="5550.0" yPosition="2562.0">
+      <Fields>
+        <Field name="vehiculoUno" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="vehiculoDos" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="vehiculoTres" type="Vehiculo" visibility="public" isStatic="true"/>
+        <Field name="enemigo1" type="String" visibility="private" isFinal="true"/>
+        <Field name="vidaEnemigo" type="String" visibility="private" isFinal="true"/>
+        <Field name="ataqueEnemigo" type="String" visibility="private" isFinal="true"/>
+        <Field name="enemigos" type="Enemigo[]" visibility="public" isStatic="true"/>
+        <Field name="iconoEnemigo" type="IconoEnemigo" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="noMovimientos" returnType="int" visibility="public"/>
+        <Method name="porcentajeAtaque" returnType="int" visibility="public"/>
+        <Method name="mostrarMovimientos" returnType="String" visibility="public"/>
+        <Method name="mostrarPorcentaje" returnType="String" visibility="public"/>
+        <Method name="Enemigos" returnType="Enemigo[]" visibility="public"/>
+        <Method name="mostrarEnemigos" returnType="String[][]" visibility="public"/>
+        <Method name="mostrarVidaJugador" returnType="String[][]" visibility="public"/>
+        <Method name="mostrarAtaqueJugador" returnType="String[][]" visibility="public"/>
+        <Method name="mostrarDefensaJugador" returnType="String[][]" visibility="public"/>
+        <Method name="mostrarAtaqueDefensaJugador" returnType="String[][]" visibility="public"/>
+        <Method name="moverse" returnType="void" visibility="public">
+          <Argument type="String" name="cantidadCasillas"/>
+        </Method>
+        <Method name="ataque" returnType="int" visibility="public">
+          <Argument type="String" name="recibirPorcentaje"/>
+          <Argument type="String" name="valorAtaque"/>
+        </Method>
+        <Method name="randomFilas" returnType="int" visibility="public">
+          <Argument type="int" name="filas"/>
+        </Method>
+        <Method name="randomColumnas" returnType="int" visibility="public">
+          <Argument type="int" name="columnas"/>
+        </Method>
+        <Method name="coordenadasVehiculoUno" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="coordenadasVehiculoDos" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="coordenadasVehiculoTres" returnType="void" visibility="public">
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="guardarPosicion" returnType="void" visibility="public">
+          <Argument type="int" name="identificador"/>
+          <Argument type="int" name="fila"/>
+          <Argument type="int" name="columna"/>
+        </Method>
+        <Method name="mostrarPosicion" returnType="String[][]" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Principal" package="RPG.jugabilidad" visibility="public" xPosition="5819.0" yPosition="3811.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DadoPartida" package="RPG.jugabilidad" visibility="public" xPosition="9768.0" yPosition="2159.0">
+      <Fields>
+        <Field name="imagen" type="ImageIcon" visibility="package"/>
+        <Field name="imagenDado" type="ImageIcon" visibility="package"/>
+        <Field name="imagenMovimiento" type="ImageIcon" visibility="package"/>
+        <Field name="imagenAtaque" type="ImageIcon" visibility="package"/>
+        <Field name="imagenComodin" type="ImageIcon" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="seleccionAtaque" returnType="Icon" visibility="public">
+          <Argument type="Boolean" name="criterioSeleccion"/>
+        </Method>
+        <Method name="seleccionMovimiento" returnType="Icon" visibility="public">
+          <Argument type="Boolean" name="criterioSeleccion"/>
+        </Method>
+        <Method name="seleccionComodin" returnType="Icon" visibility="public">
+          <Argument type="Boolean" name="criterioSeleccion"/>
+        </Method>
+        <Method name="desusoAtaque" returnType="Icon" visibility="public"/>
+        <Method name="dadoAtaque" returnType="Icon" visibility="public"/>
+        <Method name="desusoMovimiento" returnType="Icon" visibility="public"/>
+        <Method name="dadoMovimiento" returnType="Icon" visibility="public"/>
+        <Method name="desusoComodin" returnType="Icon" visibility="public"/>
+        <Method name="interrogacionComodin" returnType="Icon" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="PosicionarVehiculo" package="RPG.jugabilidad" visibility="public" xPosition="6215.0" yPosition="3811.0">
+      <Fields>
+        <Field name="untitledField" type="Object" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="IconoAvion" package="RPG.escenario" visibility="public" xPosition="10144.0" yPosition="2595.0">
+      <Fields>
+        <Field name="imagen" type="ImageIcon" visibility="package"/>
+        <Field name="avion" type="ImageIcon" visibility="package"/>
+        <Field name="ancho" type="int" visibility="package"/>
+        <Field name="reductorContador" type="int" visibility="public" isStatic="true"/>
+        <Field name="yaIngresado" type="Boolean" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="insertarIcono" returnType="Icon" visibility="public">
+          <Argument type="int" name="criterioDimension"/>
+          <Argument type="String" name="terreno"/>
+        </Method>
+        <Method name="seleccTerreno" returnType="Icon" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="avionLake" returnType="Icon" visibility="public"/>
+        <Method name="avionLlanura" returnType="Icon" visibility="public"/>
+        <Method name="mountain" returnType="Icon" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="IconoEnemigo" package="RPG.escenario" visibility="public" xPosition="6788.0" yPosition="2490.0">
+      <Fields>
+        <Field name="imagen" type="ImageIcon" visibility="package"/>
+        <Field name="enemigo" type="ImageIcon" visibility="package"/>
+        <Field name="ancho" type="int" visibility="package"/>
+        <Field name="codigoEnemigo" type="int" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="insertarIcono" returnType="Icon" visibility="public">
+          <Argument type="int" name="criterioDimension"/>
+          <Argument type="String" name="terreno"/>
+        </Method>
+        <Method name="seleccTerreno" returnType="Icon" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="enemigoLake" returnType="Icon" visibility="public"/>
+        <Method name="enemigoLlanura" returnType="Icon" visibility="public"/>
+        <Method name="enemigoMountain" returnType="Icon" visibility="public"/>
+        <Method name="randomFilas" returnType="int" visibility="public">
+          <Argument type="int" name="filas"/>
+        </Method>
+        <Method name="randomColumnas" returnType="int" visibility="public">
+          <Argument type="int" name="columnas"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Terreno" package="RPG.escenario" visibility="public" xPosition="9408.0" yPosition="1788.0">
+      <Fields>
+        <Field name="imagen" type="ImageIcon" visibility="package"/>
+        <Field name="imagenTerreno" type="ImageIcon" visibility="package"/>
+        <Field name="aleatorio" type="int" visibility="package"/>
+        <Field name="alto" type="int" visibility="package"/>
+        <Field name="ancho" type="int" visibility="package"/>
+        <Field name="nombreTerreno" type="String" visibility="package"/>
+        <Field name="nombreTemporal" type="String" visibility="public" isStatic="true"/>
+        <Field name="codigoTerreno" type="String" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getNombreTemporal" returnType="String" visibility="public"/>
+        <Method name="noTerreno" returnType="int" visibility="public" isStatic="true"/>
+        <Method name="definirTerreno" returnType="Icon" visibility="public"/>
+        <Method name="insertarIcono" returnType="Icon" visibility="public">
+          <Argument type="int" name="valorDimension"/>
+        </Method>
+        <Method name="insertarEscenario" returnType="Icon" visibility="public">
+          <Argument type="String" name="criterio"/>
+        </Method>
+        <Method name="llanura" returnType="Icon" visibility="public"/>
+        <Method name="montana" returnType="Icon" visibility="public"/>
+        <Method name="agua" returnType="Icon" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="IconoTanque" package="RPG.escenario" visibility="public" xPosition="10502.0" yPosition="2998.0">
+      <Fields>
+        <Field name="imagen" type="ImageIcon" visibility="package"/>
+        <Field name="tanque" type="ImageIcon" visibility="package"/>
+        <Field name="ancho" type="int" visibility="package"/>
+        <Field name="reductorContador" type="int" visibility="public" isStatic="true"/>
+        <Field name="yaIngresado" type="Boolean" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="insertarIcono" returnType="Icon" visibility="public">
+          <Argument type="int" name="criterioDimension"/>
+          <Argument type="String" name="terreno"/>
+        </Method>
+        <Method name="seleccTerreno" returnType="Icon" visibility="public">
+          <Argument type="String" name="tipo"/>
+        </Method>
+        <Method name="lake" returnType="Icon" visibility="public"/>
+        <Method name="tanqueLlanura" returnType="Icon" visibility="public"/>
+        <Method name="tanqueMountain" returnType="Icon" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Arma" package="RPG.armas" visibility="public" xPosition="1352.0" yPosition="3425.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="tipoArma" type="String" visibility="private"/>
+        <Field name="ataque" type="String" visibility="private"/>
+        <Field name="punteria" type="String" visibility="private"/>
+        <Field name="precio" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="tipoArma"/>
+          <Argument type="String" name="ataque"/>
+          <Argument type="String" name="punteria"/>
+          <Argument type="String" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getTipoArma" returnType="String" visibility="public"/>
+        <Method name="setTipoArma" returnType="void" visibility="public">
+          <Argument type="String" name="tipoArma"/>
+        </Method>
+        <Method name="getAtaque" returnType="String" visibility="public"/>
+        <Method name="setAtaque" returnType="void" visibility="public">
+          <Argument type="String" name="ataque"/>
+        </Method>
+        <Method name="getPunteria" returnType="String" visibility="public"/>
+        <Method name="setPunteria" returnType="void" visibility="public">
+          <Argument type="String" name="punteria"/>
+        </Method>
+        <Method name="getPrecio" returnType="String" visibility="public"/>
+        <Method name="setPrecio" returnType="void" visibility="public">
+          <Argument type="String" name="precio"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Vehiculo" package="RPG.vehiculos" visibility="public" xPosition="3414.0" yPosition="3756.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="tipoVehiculo" type="String" visibility="private"/>
+        <Field name="armaIntegrada" type="String" visibility="private"/>
+        <Field name="creadorAuto" type="String" visibility="private"/>
+        <Field name="identificador" type="String" visibility="private"/>
+        <Field name="vida" type="String" visibility="private"/>
+        <Field name="ataque" type="String" visibility="private"/>
+        <Field name="defensa" type="String" visibility="private"/>
+        <Field name="posFila" type="int" visibility="private"/>
+        <Field name="posColumna" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="tipoVehiculo"/>
+          <Argument type="String" name="armaIntegrada"/>
+          <Argument type="String" name="creadorAuto"/>
+          <Argument type="String" name="identificador"/>
+          <Argument type="String" name="vida"/>
+          <Argument type="String" name="ataque"/>
+          <Argument type="String" name="defensa"/>
+          <Argument type="int" name="posFila"/>
+          <Argument type="int" name="posColumna"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getTipoVehiculo" returnType="String" visibility="public"/>
+        <Method name="setTipoVehiculo" returnType="void" visibility="public">
+          <Argument type="String" name="tipoVehiculo"/>
+        </Method>
+        <Method name="getArmaIntegrada" returnType="String" visibility="public"/>
+        <Method name="setArmaIntegrada" returnType="void" visibility="public">
+          <Argument type="String" name="armaIntegrada"/>
+        </Method>
+        <Method name="getCreadorAuto" returnType="String" visibility="public"/>
+        <Method name="setCreadorAuto" returnType="void" visibility="public">
+          <Argument type="String" name="creadorAuto"/>
+        </Method>
+        <Method name="getIdentificador" returnType="String" visibility="public"/>
+        <Method name="setIdentificador" returnType="void" visibility="public">
+          <Argument type="String" name="identificador"/>
+        </Method>
+        <Method name="getVida" returnType="String" visibility="public"/>
+        <Method name="setVida" returnType="void" visibility="public">
+          <Argument type="String" name="vida"/>
+        </Method>
+        <Method name="getAtaque" returnType="String" visibility="public"/>
+        <Method name="setAtaque" returnType="void" visibility="public">
+          <Argument type="String" name="ataque"/>
+        </Method>
+        <Method name="getDefensa" returnType="String" visibility="public"/>
+        <Method name="setDefensa" returnType="void" visibility="public">
+          <Argument type="String" name="defensa"/>
+        </Method>
+        <Method name="getPosFila" returnType="int" visibility="public"/>
+        <Method name="setPosFila" returnType="void" visibility="public">
+          <Argument type="int" name="posFila"/>
+        </Method>
+        <Method name="getPosColumna" returnType="int" visibility="public"/>
+        <Method name="setPosColumna" returnType="void" visibility="public">
+          <Argument type="int" name="posColumna"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Objeto" package="RPG.objetos" visibility="public" xPosition="44.0" yPosition="3247.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="puntos" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="puntos"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPuntos" returnType="String" visibility="public"/>
+        <Method name="setPuntos" returnType="void" visibility="public">
+          <Argument type="String" name="puntos"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Enemigo" package="RPG.enemigos" visibility="public" xPosition="5418.0" yPosition="4082.0">
+      <Fields>
+        <Field name="vida" type="String" visibility="private"/>
+        <Field name="ataque" type="String" visibility="private"/>
+        <Field name="nombre" type="String" visibility="private"/>
+        <Field name="posFila" type="int" visibility="private"/>
+        <Field name="posColumna" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="String" name="vida"/>
+          <Argument type="String" name="ataque"/>
+          <Argument type="int" name="posFila"/>
+          <Argument type="int" name="posColumna"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getVida" returnType="String" visibility="public"/>
+        <Method name="setVida" returnType="void" visibility="public">
+          <Argument type="String" name="vida"/>
+        </Method>
+        <Method name="getAtaque" returnType="String" visibility="public"/>
+        <Method name="setAtaque" returnType="void" visibility="public">
+          <Argument type="String" name="ataque"/>
+        </Method>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getPosFila" returnType="int" visibility="public"/>
+        <Method name="setPosFila" returnType="void" visibility="public">
+          <Argument type="int" name="posFila"/>
+        </Method>
+        <Method name="getPosColumna" returnType="int" visibility="public"/>
+        <Method name="setPosColumna" returnType="void" visibility="public">
+          <Argument type="int" name="posColumna"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="RPG.jugabilidad.Jugabilidad" target="RPG.jugabilidad.PosicionarVehiculo"/>
+    <IsRelation name="is" source="RPG.interfaz.IngresarVehiculos" target="RPG.jugabilidad.Jugabilidad"/>
+    <HasRelation name="vehiculosJuego" source="RPG.interfaz.ListadoVehiculo" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Vehiculo&gt;"/>
+    <HasRelation name="listaVehiculo" source="RPG.interfaz.IngresarVehiculos" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Vehiculo&gt;"/>
+    <IsRelation name="is" source="RPG.interfaz.Tienda" target="RPG.interfaz.ArmasAdquiridas"/>
+    <IsRelation name="is" source="RPG.excepciones.Enteros" target="RPG.jugabilidad.Jugabilidad"/>
+    <HasRelation name="listaJugador" source="RPG.interfaz.ListadoJugador" target="RPG.jugador.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Jugador&gt;"/>
+    <HasRelation name="terrenos" source="RPG.interfaz.Escenario" target="RPG.escenario.Terreno" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="RPG.interfaz.OpcionesCrear" target="RPG.interfaz.IngresarJugador" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculoTres" source="RPG.jugabilidad.Jugabilidad" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculoTres" source="RPG.interfaz.ListadoVehiculo" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="iconoEnemigoDos" source="RPG.interfaz.Escenario" target="RPG.escenario.IconoEnemigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listadoArmas" source="RPG.interfaz.ArmasTienda" target="RPG.armas.Arma" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Arma&gt;"/>
+    <UseRelation name="" source="RPG.interfaz.OpcionesCrear" target="RPG.interfaz.IngresarVehiculos" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="mostrarDado" source="RPG.interfaz.Escenario" target="RPG.jugabilidad.DadoPartida" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="iconoEnemigoTres" source="RPG.interfaz.Escenario" target="RPG.escenario.IconoEnemigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="iconoEnemigo" source="RPG.jugabilidad.Jugabilidad" target="RPG.escenario.IconoEnemigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="RPG.interfaz.IniciarJuego" target="RPG.interfaz.SeleccionListado"/>
+    <HasRelation name="vehiculoDos" source="RPG.jugabilidad.Jugabilidad" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="vehiculoDos" source="RPG.interfaz.ListadoVehiculo" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="iconoAvion" source="RPG.interfaz.Escenario" target="RPG.escenario.IconoAvion" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="iconoEnemigo" source="RPG.interfaz.Escenario" target="RPG.escenario.IconoEnemigo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="jugabilidad" source="RPG.interfaz.Escenario" target="RPG.jugabilidad.Jugabilidad" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="RPG.jugabilidad.Jugabilidad" target="RPG.enemigos.Enemigo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="RPG.interfaz.OpcionesCrear" target="RPG.interfaz.IngresarArma" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listadoObjetos" source="RPG.interfaz.Tienda" target="RPG.objetos.Objeto" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Objeto&gt;"/>
+    <IsRelation name="is" source="RPG.jugabilidad.Principal" target="RPG.jugabilidad.Jugabilidad"/>
+    <HasRelation name="vehiculoUno" source="RPG.jugabilidad.Jugabilidad" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="RPG.interfaz.IngresarArma" target="RPG.interfaz.Tienda"/>
+    <HasRelation name="vehiculoUno" source="RPG.interfaz.ListadoVehiculo" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaArma" source="RPG.interfaz.IngresarArma" target="RPG.armas.Arma" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Arma&gt;"/>
+    <HasRelation name="iconoTanque" source="RPG.interfaz.Escenario" target="RPG.escenario.IconoTanque" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listadoJugador" source="RPG.interfaz.IngresarVehiculos" target="RPG.jugador.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Jugador&gt;"/>
+    <IsRelation name="is" source="RPG.interfaz.Inicio" target="RPG.interfaz.IniciarJuego"/>
+    <HasRelation name="listaJugador" source="RPG.interfaz.IngresarJugador" target="RPG.jugador.Jugador" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Jugador&gt;"/>
+    <IsRelation name="is" source="RPG.interfaz.SeleccionListado" target="RPG.interfaz.ListadoJugador"/>
+    <HasRelation name="listadoVehiculos" source="RPG.interfaz.ListadoVehiculo" target="RPG.vehiculos.Vehiculo" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Vehiculo&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
