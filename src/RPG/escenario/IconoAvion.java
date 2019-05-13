@@ -7,7 +7,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 public class IconoAvion {
-    
+    //Clase utilizada para colocar el Icono del avion en el escenario, ya sea agua o tierra
     ImageIcon imagen;
     ImageIcon avion;
     int ancho, alto;
