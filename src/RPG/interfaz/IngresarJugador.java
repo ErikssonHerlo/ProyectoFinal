@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class IngresarJugador extends javax.swing.JFrame {
-
+ /**
+     * En la clase IngresarJugador se crea un Usuario, el cual tendra a su nombre, la creacion de armas, vehiculos y compras en la tienda
+     * En dicha clase se pueden agregar tantos jugadores, como sean necesario
+     * La idea principal era guardar la partida creada.
+     */
     public static ArrayList<Jugador> listaJugador = new ArrayList<Jugador>();
     private final String nivel = "1";
     private final String experiencia = "0";
