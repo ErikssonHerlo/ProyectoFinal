@@ -18,7 +18,7 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 
 public class Escenario extends javax.swing.JFrame {
-
+    //Se Crea el escenario a base de los Datos Obtenidos
     public static int recibirFila,recibirColumna;
     public static int[][] posiciones;
     public static String[][] codigoTerreno;

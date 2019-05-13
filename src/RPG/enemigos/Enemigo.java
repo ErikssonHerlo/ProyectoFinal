@@ -2,7 +2,7 @@
 package RPG.enemigos;
 
 public class Enemigo {
- 
+    //Clase de enemigo con todos sus atributos
     private String vida;
     private String ataque;
     private String nombre; 

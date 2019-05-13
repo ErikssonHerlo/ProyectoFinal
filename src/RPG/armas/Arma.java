@@ -2,7 +2,7 @@
 package RPG.armas;
 
 public class Arma {
-    
+    //Clase de Arma con todos sus atributos
     private String nombre;
     private String tipoArma;
     private String ataque;
