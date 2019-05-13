@@ -148,12 +148,18 @@ public class ArmasTienda extends javax.swing.JFrame {
         comprar.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
         comprar.setForeground(new java.awt.Color(0, 0, 0));
         comprar.setText("COMPRAR");
+        comprar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comprarActionPerformed(evt);
+            }
+        });
 
         infoMoney.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
         infoMoney.setForeground(new java.awt.Color(255, 255, 255));
         infoMoney.setText("DINERO DEL JUGADOR      Q ");
 
         dineroJugador.setFont(new java.awt.Font("DejaVu Serif Condensed", 1, 14)); // NOI18N
+        dineroJugador.setForeground(new java.awt.Color(1, 1, 1));
 
         armaSelec = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
@@ -250,6 +256,11 @@ public class ArmasTienda extends javax.swing.JFrame {
         
     }//GEN-LAST:event_seleccionarActionPerformed
 
+    private void comprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comprarActionPerformed
+       
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comprarActionPerformed
+
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -287,7 +298,7 @@ public class ArmasTienda extends javax.swing.JFrame {
     private javax.swing.JTable armaSelec;
     private javax.swing.JButton comprar;
     private javax.swing.JLabel dibujo;
-    private javax.swing.JLabel dineroJugador;
+    public javax.swing.JLabel dineroJugador;
     private javax.swing.JLabel fondo;
     private javax.swing.JLabel infoMoney;
     private javax.swing.JLabel infoNo;
